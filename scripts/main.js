@@ -36,7 +36,7 @@ function renderNavButtons() {
 }
 
 function loadPage() {
-    $('#page_content').load(`fragments/page${currentPageIndex}_fragment.html`)
+    $('#page_content').load(`fragments/page${currentPageIndex}_fragment.html`);
 }
 
 function previousPage() {
