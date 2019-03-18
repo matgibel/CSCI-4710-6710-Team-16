@@ -8,8 +8,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <style type="text/css">
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: ">>" !important;
+        }
+    </style>
 </head>
 
 <body>
+<h1><span style="color: blue">Web</span><span style="color: green">Apps</span> <span style="color: blue">HW</span><span
+        style="color: green">5</span>
+</h1>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Page 1</li>
+        <li class="breadcrumb-item"><a href="#">Page 2</a></li>
+        <li class="breadcrumb-item"><a href="#">Page 3</a></li>
+        <li class="breadcrumb-item"><a href="#">Page 4</a></li>
+    </ol>
+</nav>
+
+<div>
+    <div class="d-flex p-2">Here's some content</div>
+</div>
+
+<div>
+    <button type="button" class="btn btn-success">Previous</button>
+    <button type="button" class="btn btn-success">Continue</button>
+</div>
+
 </body>
 </html>
