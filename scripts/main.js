@@ -75,7 +75,7 @@ function nextPage() {
 
 function refresh() {
     renderBreadcrumbs();
-    renderNavButtons()
+    renderNavButtons();
     loadPage();
 }
 
