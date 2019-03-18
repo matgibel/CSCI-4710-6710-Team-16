@@ -47,15 +47,15 @@ function renderNavButtons() {
         nextDisabled = "disabled";
     }
 
-    let output = `<button id='previous_page' type='button' class='btn btn-success' ${prevDisabled} onclick="previousPage()">Previous</button>
-        <button id='next_page' type='button' class='btn btn-success' ${nextDisabled} onclick="nextPage()">Continue</button>`;
+    let output = `<button id="previous-page" type='button' class='btn btn-success' ${prevDisabled} onclick="previousPage()">Previous</button>
+        <button id="next-page" type='button' class='btn btn-success' ${nextDisabled} onclick="nextPage()">Continue</button>`;
 
-    $('#nav_buttons').html(output);
+    $('#nav-buttons').html(output);
 }
 
 function loadPage() {
     const key = Object.keys(PAGES)[currentPageIndex];
-    $('#page_content').load(PAGES[key].url);
+    $('#page-content').load(PAGES[key].url);
 }
 
 function previousPage() {

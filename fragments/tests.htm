@@ -1,4 +1,36 @@
-<div style="margin: 50px 0 50px 0;">
-    <h2>Here's some content<br>So drop on the deck and flop like a fish!
-        Ready?</h2>
+<div style='margin: 50px 0 50px 0;'>
+
+    <div id='test_area'>
+        <h1>Running Tests... <img class="center" src="https://i.gifer.com/ZKZg.gif" height=100px width=100px
+                                  alt="Loading Gif"></h1>
+        <div class='progress'>
+            <div id="progress-bar" class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar' aria-valuenow='75'
+                 aria-valuemin='0'
+                 aria-valuemax='100' style='width: 0%'></div>
+        </div>
+    </div>
+
+    <script>
+        $('#next-page').css('display', 'none');
+
+        if (window.handler !== undefined)
+            clearInterval(window.handler);
+
+        window.currentProgress = 0;
+
+        window.handler = setInterval(function () {
+            $('#progress-bar').css('width', `${window.currentProgress += 2}%`);
+
+            if (window.currentProgress >= 100) {
+                finishTesting();
+            }
+        }, 100);
+
+        function finishTesting() {
+            clearInterval(handler);
+            nextPage();
+        }
+
+    </script>
+
 </div>
